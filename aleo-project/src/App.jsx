@@ -21,8 +21,8 @@ function App() {
     setExecuting(true);
     const result = await aleoWorker.localProgramExecution(
       helloworld_program,
-      "main",
-      ["5u32", "5u32"],
+      "loan_amount",
+      ["10u64", "5u64"],
     );
     setExecuting(false);
 
